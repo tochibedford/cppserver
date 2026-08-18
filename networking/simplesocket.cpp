@@ -8,8 +8,6 @@ tserve::SimpleSocket::SimpleSocket(int domain, int service, int protocol, int po
     //Establish connection
     sock = socket(domain, service, protocol);
     test_connection(sock);
-    connection = connect_to_network(sock, address);
-    test_connection(connection);
 }
 
 void tserve::SimpleSocket::test_connection(int item_to_test){
@@ -30,3 +28,9 @@ int tserve::SimpleSocket::get_sock(){
 int tserve::SimpleSocket::get_connection(){
     return connection;
 }
+
+void tserve::SimpleSocket::set_connection(int con){
+    connection = con;
+}
+
+

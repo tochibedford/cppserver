@@ -18,9 +18,12 @@ namespace tserve {
                 struct sockaddr_in address
             ) = 0;
             void test_connection(int);
+            //Getter funtions
             struct sockaddr_in get_address();
             int get_sock();
             int get_connection();
+            //Setter funtions
+            void set_connection(int con);
     };
 }
 
