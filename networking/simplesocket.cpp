@@ -24,13 +24,3 @@ struct sockaddr_in tserve::SimpleSocket::get_address(){
 int tserve::SimpleSocket::get_sock(){
     return sock;
 }
-
-int tserve::SimpleSocket::get_connection(){
-    return connection;
-}
-
-void tserve::SimpleSocket::set_connection(int con){
-    connection = con;
-}
-
-

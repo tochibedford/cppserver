@@ -10,7 +10,6 @@ namespace tserve {
         private:
             struct sockaddr_in address;
             int sock;
-            int connection;
         public: 
             SimpleSocket(int domain, int service, int protocol, int port, u_long interface);
             virtual int connect_to_network(
@@ -21,9 +20,6 @@ namespace tserve {
             //Getter funtions
             struct sockaddr_in get_address();
             int get_sock();
-            int get_connection();
-            //Setter funtions
-            void set_connection(int con);
     };
 }
 
