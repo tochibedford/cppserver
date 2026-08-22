@@ -12,6 +12,7 @@ namespace tserve {
             int sock;
         public: 
             SimpleSocket(int domain, int service, int protocol, int port, u_long interface);
+            virtual ~SimpleSocket() = default;
             virtual int connect_to_network(
                 int sock,
                 struct sockaddr_in address

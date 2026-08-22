@@ -4,6 +4,10 @@ tserve::SimpleServer::SimpleServer(int domain, int service, int protocol, int po
     listenSocket = new ListeningSocket(domain, service, protocol, port, interface, bklg);
 }
 
+tserve::SimpleServer::~SimpleServer(){
+    delete listenSocket;
+}
+
 tserve::ListeningSocket * tserve::SimpleServer::get_socket(){
     return listenSocket;
 }
