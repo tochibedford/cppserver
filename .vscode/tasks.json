@@ -12,7 +12,7 @@
                 "-fansi-escape-codes",
                 "-g",
                 "-pedantic-errors",
-                "tserve.cpp",
+                "${file}",
                 "./networking/**/*.cpp",
                 "-o",
                 "${fileDirname}/output/program"
