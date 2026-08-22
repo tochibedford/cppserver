@@ -8,7 +8,7 @@ namespace tserve {
         private:
             int backlog;
         public:
-            ListeningSocket(int domain,  int service, int protocol, int port, u_long interface, int bklg);
+            ListeningSocket(int domain,   int service, int protocol, int port, u_long interface, int bklg);
             int start_listening();
     };
 }
